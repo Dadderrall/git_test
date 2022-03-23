@@ -1,16 +1,12 @@
-.header,
+.navbar,
 .upper{
     background-color: #1F2937;
     color: #E5E7EB;
     font-size: 15px;
 }
-.header .logo{
+.navbar .logo{
     font-size: 26px;
-    color: #F9FAF8;
-}
-.upper .header-three{
-    display: flex;
-    font-size: 36px;
+    font-weight: bold;
     color: #F9FAF8;
 }
 .sign button,
@@ -34,27 +30,66 @@ a:visited{
 a:hover{
     color: lightskyblue;
 }
+.navbar{
+    max-width: 3200px;
+    height: 40px;
+}
 .header{
     display: flex;
-    width: auto;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .nav{
     display: flex;
-    justify-content: space-between;
-    margin: 0px 20px;
+    justify-content: flex-end;
     align-items: flex-start;
     flex: 1;
 }
+.navbar .logo{
+    margin-left: 10px;
+}
+.nav li{
+    margin-left: 38px;
+    font-weight: 600;
+    margin-right: 10px;
+}
 .upper{
     display: flex;
-    padding: 10px;
+    padding: 5px;
+}
+.header{
+    display: flex;
+    justify-content: space-evenly;
 }
 .upper .body{
     flex: 1;
     justify-content: center;
     align-items: center;
-    padding: 20px 40px 20px 30px;
+    padding: 10px 10px 40px 10px;
+    text-align:start;
+    gap: 35px;
+}
+.body{
+    display: flex;
+}
+.body #button{
+    color: white;
+    border-radius: 5px;
+    border: 2px solid #3882F6;
+    background-color: #3882F6;
+    padding: 0px 10px;
+    position: absolute;
+    margin-top: 8px;
+}
+#button:hover{
+    color: blue;
+    background-color: plum;
+}
+.body .upper-image{
+    display: flex;
+    background-color: #E5E7EB;
+    padding: 10px 60px;
+    color: #1F2937;
+    flex: 0;
 }
 .header-two{
     font-size: 24px;
@@ -67,22 +102,59 @@ a:hover{
 .random .boxes{
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 40px;
+    margin: 15px;
+    flex: auto;
 }
-.random .description{
-    font-size: 15px;
+.description{
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin: 5px;
+    gap: 40px;
+    margin: 15px;
+    flex: auto;
+}
+.description .text{
+    display: flex;
+    gap: 40px;
     text-align: center;
+    justify-content: center;
+    margin: -10px 40px 25px 40px;
+    flex: auto;
 }
 .boxes .photo{
     width: 100px;
     height: 100px;
     border: 3px solid blue;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 12px;
+}
+.text .under{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+
 }
 
+.boxes :nth-child(1) {
+    background-image: url(/photos/green\ Small.jpeg);
+    background-size:cover;
+}
+.boxes :nth-child(2){
+    background-image: url(/photos/birds\ Small.jpeg);
+    background-size: cover;
+
+}
+.boxes :nth-child(3){
+    background-image: url(/photos/hills\ Small.jpeg);
+    background-size: cover;
+
+}
+.boxes :nth-child(4){
+    background-image: url(/photos/lake\ Small.jpeg);
+    background-size: cover;
+    
+}
 .thor{
     background-color: #E5E7EB;
     font-size: 20px; 
@@ -99,16 +171,31 @@ a:hover{
     display: flex;
     justify-content: end;
 }
+.footer{
+    display: flex;
+}
 .sign{
     display: flex;
     background-color: #3882F6;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: 25px;
     padding: 8px;
     color: white;
+    border-radius: 5px;
+    text-align: start;
+    ;
 }
-.sign .button{
+.sign #button-two{
     justify-content: end;
     align-items: flex-end;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid #FFFFFF;
+    background-color: #3882F6;
+    padding: 0 15px;
+    margin-left: 8px;
+}
+#button-two:hover{
+    background-color: plum;
 }
